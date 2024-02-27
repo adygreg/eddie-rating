@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #87bdfab3;
+  --secondary-color: #67aaf7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.container {
+  padding: 2rem 2rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-section .right-section ul li {
+  display: inline;
+}
+.nav-section .right-section ul li a {
+  color: black;
+  margin: 0px 5px;
+  text-decoration: none;
+}
+
+.hero-tweak {
+  padding: 0rem 2rem 2rem 2rem;
+}
+
+.hero-section {
+  color: black;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  height: 20rem;
+}
+.hero-section .left-section img {
+  margin-left: 10px;
+  border-radius: 15px;
+  width: 300px;
+}
+.hero-section .right-section {
+  height: 95%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 20px;
+}
+.hero-section .right-section .hh1 {
+  font-size: 64px;
+}
+.hero-section .right-section .hh3 {
+  font-size: 32px;
+  color: var(--secondary-color);
+}
+.hero-section .right-section .hh5 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.hero-section .right-section .music-album::after {
+  font-weight: 500;
+  color: black;
+  content: " by ";
+}
+.hero-section .right-section .eddierating-rating::before {
+  content: "eddie rating: ";
+}
+.hero-section .right-section .music-length::before {
+  content: "Length: ";
+}
+.hero-section .right-section .music-genre::before {
+  content: "Genre:  ";
+}
+.hero-section .right-section .music-release::before {
+  content: "Release: ";
+}
+
+.button {
+  padding: 0.4rem 0.8rem;
+}
+
+.button:hover {
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+}
+
+.di {
+  display: inline;
+}
+
+.cmark {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 5px;
+}/*# sourceMappingURL=style.css.map */
