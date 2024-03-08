@@ -28,13 +28,10 @@ nav {
 
     .left-section {
         .logo {
-
-            p {
-                display: inline;
-                margin: -2px;
-            }
+            align-items: end;
 
             .alpha {
+                margin: -4px 0px;
                 font-size: 32px;
                 font-weight: 600;
             }
@@ -80,6 +77,18 @@ header {
             font-weight: 100;
         }
 
+        .coming-hd {
+            margin-top: 40px;
+            text-align: center;
+            font-size: 48px;
+            font-weight: 600;
+        }
+        .cmp-hd {
+            text-align: center;
+            font-size: 21px;
+            font-weight: 100;
+        }
+
         .header-cta {
             margin-top: 45px;
 
@@ -117,6 +126,11 @@ header {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+
+// Hide me :O
+.hide-me {
+    display: none;
+}
 
 // Links 
 

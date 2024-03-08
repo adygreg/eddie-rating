@@ -18,11 +18,11 @@ nav .inr-container {
   justify-content: space-between;
   align-items: center;
 }
-nav .left-section .logo p {
-  display: inline;
-  margin: -2px;
+nav .left-section .logo {
+  align-items: end;
 }
 nav .left-section .logo .alpha {
+  margin: -4px 0px;
   font-size: 32px;
   font-weight: 600;
 }
@@ -51,6 +51,17 @@ header .inr-container .mn-hd {
 }
 header .inr-container .p-hd {
   margin-top: 12px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 100;
+}
+header .inr-container .coming-hd {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+}
+header .inr-container .cmp-hd {
   text-align: center;
   font-size: 21px;
   font-weight: 100;
@@ -84,6 +95,10 @@ header .inr-container .header-cta a {
   cursor: pointer;
   border: 2px rgba(255, 255, 255, 0) solid;
   background-color: rgba(255, 255, 255, 0.2);
+}
+
+.hide-me {
+  display: none;
 }
 
 a {
