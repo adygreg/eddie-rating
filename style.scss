@@ -1,112 +1,144 @@
-:root {
-    --primary-color: #87bdfab3;
-    --secondary-color: #67aaf7;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
+
+    color: white;
+    background-color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    .mn-container {
+        margin: 1em 5em;
+    }
+
 }
 
-.container {
-    padding: 2rem 2rem;
-}
 
-.nav-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav {
 
-    .right-section {
-        ul {
-            li {
+    .inr-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-section {
+        .logo {
+
+            p {
                 display: inline;
-                a {
-                    color: black;
-                    margin: 0px 5px;
-                    text-decoration: none;
-                }
+                margin: -2px;
+            }
+
+            .alpha {
+                font-size: 32px;
+                font-weight: 600;
+            }
+            .beta {
+                font-weight: 100;
             }
         }
     }
-}
 
-.hero-tweak {
-    padding: 0rem 2rem 2rem 2rem;
-}
-
-.hero-section {
-    color: black;
-    padding: 10px 0px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    height: 20rem;
-    .left-section {
-        img {
-            margin-left: 10px;
-            border-radius: 15px;
-            width: 300px;
-        }
-    }
     .right-section {
-        height: 95%;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 0px 20px;
-        .hh1 {
-            font-size: 64px;
-        }
-        .hh3 {
-            font-size: 32px;
-            color: var(--secondary-color);
-        }
-        .hh5 { 
-            font-size: 24px;
-            font-weight: 600;
-        }
-        .music-album::after {
-            font-weight: 500;
-            color: black;
-            content: " by ";
-        }
-        .eddierating-rating::before{
-            content: "eddie rating: ";
-        }
-        .music-length::before{
-            content: "Length: ";
-        }
-        .music-genre::before{
-            content: "Genre:  ";
-        }
-        .music-release::before{
-            content: "Release: ";
+        li {
+            display: inline;
+
+            a {
+                font-size: 18px;
+            }
         }
     }
+
 }
 
-.button { 
-    padding: .4rem .8rem;
+
+header {
+
+    .inr-container {
+
+        width: 75%;
+        height: 25em;
+
+        .bin-hd {
+            font-size: 28px;
+            font-weight: 100;
+            margin-bottom: -8px;
+        }
+        .mn-hd {
+            font-size: 42px;
+            font-weight: 400;
+        }
+        .p-hd {
+            margin-top: 12px;
+            text-align: center;
+            font-size: 21px;
+            font-weight: 100;
+        }
+
+        .header-cta {
+            margin-top: 45px;
+
+            a {
+                font-size: 18px;
+                margin: 4px;
+            }
+        }
+
+    }
+
 }
-.button:hover {
-    cursor: pointer;
+
+
+.button-clear {
+    padding: 6px 24px;
     border-radius: 10px;
-    background-color: var(--primary-color);
 }
 
-.di {
-    display: inline;
+.button-clear:hover {
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.cmark {
-    padding: 5px 10px;
-    background-color: var(--primary-color);
-    border-radius: 5px;
+.button-outline {
+    opacity: .8;
+    padding: 6px 24px;
+    border: 2px rgba(255, 255, 255, 0.2) solid;
+    border-radius: 10px;
+}
+
+.button-outline:hover {
+    cursor: pointer;
+    border: 2px rgba(255, 255, 255, 0) solid;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+// Links 
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+// Flew ME :D
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-dead-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
