@@ -10,7 +10,6 @@
     box-sizing: border-box;
 }
 
-
 body {
 
     color: white;
@@ -30,13 +29,9 @@ nav {
 
     .inr-container {
 
-        z-index: 1;
-
         background-color: rgba(0, 0, 0, 0.5);
         padding: 10px;
         border-radius: 10px;
-
-        column-gap: 26rem;
 
         display: flex;
         justify-content: space-between;
@@ -192,12 +187,12 @@ header {
                     }
 
                     .user-rating {
-                        background-color: rgba(110, 215, 45, 0.6);
+                        background-color: #d0d0d080;
                     }
 
                     .eddie-rating {
                         margin-left: 10px;
-                        background-color: rgba(201, 215, 45, 0.5);
+                        background-color: #65656580;
                     }
 
                 }
@@ -249,17 +244,61 @@ header {
 
             }
 
-            .hero-article:hover {
-                cursor: pointer;
-                background-color: rgba(0, 0, 0, .6);
-            }
+        }
 
+        .hero-article:hover {
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, .6);
         }
 
     }
 
 }
 
+// FEATURE SECTION
+
+.features {
+    .inr-container {
+        .article-container {
+
+            margin: 20px 10px;
+            justify-content: space-evenly;
+
+            img {
+                width: 500px;
+                border: 10px solid rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+            }
+            .article-details{
+
+                padding: 10px;
+                text-align: center;
+
+                .at-hd {
+                    font-size: 40px;
+                    font-weight: 400;
+                }
+        
+                .at-p {
+
+                    width: 75%;
+
+                    margin-top: 12px;
+                    font-size: 20px;
+                    font-weight: 100;
+
+                    margin-bottom: 20px;
+                }
+
+                .article-cta {
+                    font-size: 20px;
+                    margin: 4px;
+                }
+
+            }
+        }
+    }
+}
 
 // CATEGORY SECTION
 .category {
@@ -281,7 +320,7 @@ header {
 
                 row-gap: 10px;
 
-                background-color: rgba(0, 0, 0, .5);
+                background-color: rgba(30, 30, 30, 0.5);
                 border-radius: 20px;
                 padding: 10px;
                 margin: 5px;
@@ -336,7 +375,7 @@ header {
 
             .category-tab:hover {
                 cursor: pointer;
-                background-color: rgba(0, 0, 0, .6);
+                background-color: rgba(50, 50, 50, 0.5);
             }
 
         }
@@ -348,15 +387,20 @@ header {
 
 .shape-group {
 
+    z-index: -5;
     position: absolute;
 
     left: 200px;
-    top: 100px;
+    top: 200px;
 
     .circle {
+
+        overflow: hidden;
         opacity: 0.8;
 
-        z-index: -5;
+        border: none;
+        outline: none;
+
         position: relative;
 
         width: 30rem;
@@ -380,9 +424,9 @@ header {
     }
 
     .circle-3 {
-        top: 20em;
+        top: 15em;
         background-color: var(--tertiary-color);
-        box-shadow: 0px 0px 150px 200px var(--tertiary-color);
+        box-shadow: 0px 0px 100px 200px var(--tertiary-color);
     }
 }
 
@@ -433,6 +477,7 @@ header {
 .throw-me {
     display: none;
 }
+
 .hide-me {
     opacity: 0;
 }
@@ -448,6 +493,12 @@ a {
 
 .stop-overflowing-x {
     overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;
+    
+}
+.stop-overflowing-x::-webkit-scrollbar {
+    display: none;
 }
 
 // Flew ME :D
