@@ -2,6 +2,9 @@
     --primary-color: #35A7E7;
     --secondary-color: #1564FD;
     --tertiary-color: #8EB8D6;
+
+    --bg-color: #000000;
+    --font-color: #FFFFFF;
 }
 
 * {
@@ -12,14 +15,8 @@
 
 body {
 
-    color: white;
-    background-color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
-    .mn-container {
-        margin: 1em 5em;
-        row-gap: 10rem;
-    }
+    color: var(--font-color);
+    background-color: var(--bg-color);
 
 }
 
@@ -29,39 +26,28 @@ nav {
 
     .inr-container {
 
-        background-color: rgba(0, 0, 0, 0.5);
-        padding: 10px;
-        border-radius: 10px;
-
-        display: flex;
         justify-content: space-between;
         align-items: center;
 
-    }
+        .left-section {
 
-    .left-section {
-
-        .logo {
             align-items: end;
 
-            .alpha {
-                margin: -7px 0px;
-                font-size: 42px;
-                font-weight: 600;
+            .version {
+                margin-left: 5px;
+                padding: 0px 2px;
+                font-size: 10px;
             }
 
-            .beta {
-                font-weight: 100;
-            }
         }
-    }
 
-    .right-section {
-        li {
-            display: inline;
+        .right-section {
+            li {
+                display: inline;
 
-            a {
-                font-size: 22px;
+                a {
+                    font-size: 22px;
+                }
             }
         }
     }
@@ -76,8 +62,6 @@ header {
     .inr-container {
 
         margin: 4rem 0rem;
-
-        width: 75%;
 
         * {
             text-align: center;
@@ -119,8 +103,6 @@ header {
 
     .inr-container {
 
-        width: 90%;
-
         .music-of-the-week {
 
             .left-section {
@@ -134,17 +116,6 @@ header {
         .hero-article {
 
             flex-grow: 1;
-
-            background-color: rgba(0, 0, 0, .5);
-            border-radius: 20px;
-            padding: 10px;
-            padding-right: 15px;
-            margin: 5px;
-
-            img {
-                height: 250px;
-                border-radius: 15px;
-            }
 
             .music-detail-section {
 
@@ -165,36 +136,18 @@ header {
                     }
 
                     .song-title2 {
+                        font-size: 26px;
                         font-weight: 600;
                     }
 
                     .album-title2 {
+                        font-size: 22px;
                         font-weight: 300;
                     }
                 }
 
                 .artist-names::before {
                     content: "by ";
-                }
-
-                .rating-section {
-
-                    .rtn-container {
-                        border-radius: 10px;
-                        font-size: 22px;
-                        font-weight: 500;
-                        padding: 6px 16px;
-                    }
-
-                    .user-rating {
-                        background-color: #d0d0d080;
-                    }
-
-                    .eddie-rating {
-                        margin-left: 10px;
-                        background-color: #65656580;
-                    }
-
                 }
 
                 .music-extras {
@@ -245,12 +198,6 @@ header {
             }
 
         }
-
-        .hero-article:hover {
-            cursor: pointer;
-            background-color: rgba(0, 0, 0, .6);
-        }
-
     }
 
 }
@@ -263,14 +210,10 @@ header {
         .article-container {
 
             margin: 20px 10px;
-            justify-content: space-evenly;
+            justify-content: space-between;
 
-            img {
-                width: 500px;
-                border: 10px solid rgba(0, 0, 0, 0.5);
-                border-radius: 20px;
-            }
-            .article-details{
+
+            .article-details {
 
                 padding: 10px;
                 text-align: center;
@@ -279,7 +222,7 @@ header {
                     font-size: 40px;
                     font-weight: 400;
                 }
-        
+
                 .at-p {
 
                     width: 75%;
@@ -322,9 +265,6 @@ header {
                 row-gap: 10px;
 
                 background-color: rgba(30, 30, 30, 0.5);
-                border-radius: 20px;
-                padding: 10px;
-                margin: 5px;
 
                 width: 250px;
 
@@ -375,7 +315,6 @@ header {
             }
 
             .category-tab:hover {
-                cursor: pointer;
                 background-color: rgba(50, 50, 50, 0.5);
             }
 
@@ -383,100 +322,73 @@ header {
     }
 }
 
+// Footer Section
 
-// BACKGROUND EFFECT
+footer {
+    .inr-container {
 
-.shape-group {
+        align-items: start;
 
-    z-index: -5;
-    position: absolute;
-    
-    top: 80rem;
+        justify-content: space-between;
+        margin-bottom: 3em;
+        row-gap: 5em;
 
-    width: 100%;
+        .bottom-section {
 
-    .circle {
+            width: 100%;
+            align-items: center;
 
-        overflow: hidden;
-        opacity: 0.8;
+            .left-section {
+                align-items: center;
 
-        border: none;
-        outline: none;
+                .credit {
+                    margin-left: 20px;
 
-        position: relative;
+                    .copyright {
+                        margin-top: 10px;
+                    }
 
-        width: 35rem;
-        height: 35rem;
+                    .social-cta {
+                        margin-top: 20px;
+                    }
+                }
+            }
 
-        border-radius: 100%;
+            .right-section {
 
-        margin: -29% 0%;
+                justify-content: end;
+
+                flex-grow: 1;
+
+                height: 50%;
+                column-gap: 5px;
+
+                .search-box {
+
+                    width: 70%;
+
+                    color: var(--font-color);
+                    background-color: var(--bg-color);
+
+                    font-size: 18px;
+                    font-weight: 300;
+
+                    padding: 10px 25px;
+
+                    border: 3px solid rgba(255, 255, 255, 0.15);
+                    border-radius: 50px;
+
+                }
+
+                .search-cta {
+                    border-radius: 50px;
+                }
+
+
+            }
+        }
     }
-
-    .circle-1 {
-        left: 10%;
-        background-color: var(--primary-color);
-        box-shadow: 0px 0px 150px 200px var(--primary-color);
-    }
-
-    .circle-2 {
-        left: 50%;
-        z-index: -1;
-        background-color: var(--secondary-color);
-        box-shadow: 0px 0px 150px 200px var(--secondary-color);
-    }
-
-    .circle-3 {
-        left: 10%;
-        z-index: -3;
-        margin: 15% 0%;
-        background-color: var(--tertiary-color);
-        box-shadow: 0px 0px 100px 200px var(--tertiary-color);
-    }
 }
-
-
-.button-clear {
-    text-align: center;
-    padding: 6px 24px;
-    border-radius: 10px;
-}
-
-.button-clear:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.button-outline {
-    text-align: center;
-    opacity: .8;
-    padding: 6px 24px;
-    border: 2px rgba(255, 255, 255, 0.2) solid;
-    border-radius: 10px;
-}
-
-.button-outline:hover {
-    cursor: pointer;
-    border: 2px rgba(255, 255, 255, 0) solid;
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-.button-fill {
-    text-align: center;
-    opacity: .8;
-    padding: 6px 24px;
-
-    color: black;
-    background-color: white;
-
-    border-radius: 10px;
-}
-
-.button-fill:hover {
-    cursor: pointer;
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
 
 // Hide me :O
 .throw-me {
@@ -498,10 +410,12 @@ a {
 
 .stop-overflowing-x {
     overflow-x: scroll;
-    -ms-overflow-style: none;  /* IE and Edge */
+    -ms-overflow-style: none;
+    /* IE and Edge */
     scrollbar-width: none;
-    
+
 }
+
 .stop-overflowing-x::-webkit-scrollbar {
     display: none;
 }
@@ -522,4 +436,54 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+// Name Effect
+
+.name {
+    position: relative;
+    border-radius: 10px;
+    margin: 0px 5px;
+    padding: 2px 10px;
+    width: 500px;
+    height: 250px;
+    background: linear-gradient(0deg, #000, #272727);
+}
+
+.name:before,
+.name:after {
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg, var(--primary-color), var(--tertiary-color), var(--secondary-color), var(--tertiary-color), var(--primary-color));
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.name:after {
+    filter: blur(50px);
+}
+
+.name:hover {
+    opacity: .999;
 }

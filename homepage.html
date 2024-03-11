@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Styles/visual.css">
     <link rel="stylesheet" href="Styles/style.css">
     <title>EddieRating | Baised-free music rating platform</title>
 </head>
@@ -11,34 +13,35 @@
 <body>
     <div class="mn-container flex-col">
 
-        <!-- Navigation Bar -->
+        <!-- --------------- Navigation Bar --------------- -->
 
         <nav>
-            <div class="inr-container">
-                <div class="left-section">
-                    <div class="logo flex-row">
-                        <p class="alpha">e</p>
-                        <p class="alpha">d</p>
-                        <p class="alpha">r</p>
-                        <p class="alpha">t</p>
-                        <p class="alpha">n</p>
-                        <p class="beta">.com</p>
+            <div class="inr-container container-visual flex-row">
+                <div class="left-section flex-row">
+                    <div class="logo">
+                        <p class="alpha logo-hover-effect">e</p>
+                        <p class="alpha logo-hover-effect">d</p>
+                        <p class="alpha logo-hover-effect">r</p>
+                        <p class="alpha logo-hover-effect">t</p>
+                        <p class="alpha logo-hover-effect">n</p>
+                        <p class="domain logo-hover-effect">.com</p>
                     </div>
+                    <p class="version">( alpha 1.0 )</p>
                 </div>
                 <div class="right-section">
                     <ul class="nav-cta">
-                        <li><a href="#" class="button-clear">Ratings</a></li>
-                        <li><a href="#" class="button-clear">About</a></li>
-                        <li><a href="#" class="button-clear">Contact</a></li>
-                        <li><a href="#" class="button-clear">Donate</a></li>
+                        <li><a href="#" class="button button-clear">Ratings</a></li>
+                        <li><a href="#" class="button button-clear">About</a></li>
+                        <li><a href="#" class="button button-clear">Contact</a></li>
+                        <li><a href="#" class="button button-clear">Donate</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
 
-        <!-- Header -->
+        <!-- --------------- Header --------------- -->
 
-        <header class="flex-dead-center">
+        <header>
             <div class="inr-container flex-col flex-dead-center">
                 <h3 class="bin-hd">Welcome to</h3>
                 <h1 class="mn-hd">The Best Music Rating & Review Website</h1>
@@ -46,21 +49,21 @@
                     About Digging the Real Vibes of Music</p>
 
                 <div class="header-cta">
-                    <a href="#" class="button-outline"> Explore </a>
-                    <a href="#" class="button-outline"> Learn More </a>
+                    <a href="#" class="button button-outline"> Explore </a>
+                    <a href="#" class="button button-outline"> Learn More </a>
                 </div>
             </div>
         </header>
 
-        <!-- Hero -->
+        <!-- --------------- Hero --------------- -->
 
-        <div class="hero flex-dead-center">
+        <div class="hero">
             <div class="inr-container flex-col">
 
 
-                <!--  MUSIC OF THE WEEK -->
+                <!-- --------------- MUSIC OF THE WEEK -->
 
-                <section class="music-of-the-week flex-row hero-article">
+                <section class="music-of-the-week flex-row container-visual hero-article">
                     <div class="left-section flex-row">
 
                         <img src="Styles/Images/Album_Cover/Vultures_1.png" alt="music cover" srcset=""
@@ -89,7 +92,7 @@
 
                             </p>
 
-                            <div class="rating-section flex-row">
+                            <div class="rating-container-visual flex-row">
                                 <h3 class="user-rating rtn-container">8.1</h3>
                                 <h3 class="eddie-rating rtn-container">7.4</h3>
                             </div>
@@ -108,21 +111,21 @@
                     <div class="right-section flex-col flex-dead-center">
 
                         <h1 class="section-hd"> Music of the Week </h1>
-                        <a href="#" class="opn-alb-cta button-outline">Open Album</a>
+                        <a href="#" class="opn-alb-cta button button-outline">Open Album</a>
 
                     </div>
 
                 </section>
 
 
-                <!-- TWO BOTTOM SECTION -->
+                <!-- --------------- TWO BOTTOM SECTION -->
 
                 <div class="sub-highlight flex-row">
 
 
                     <!-- ALBUM OF THE MONTH -->
 
-                    <section class="album-of-the-month flex-row hero-article">
+                    <section class="album-of-the-month flex-row container-visual hero-article">
 
                         <img src="Styles/Images/Album_Cover/american dream.png" alt="music cover" srcset=""
                             class="music-cover">
@@ -147,7 +150,7 @@
 
                             </p>
 
-                            <div class="rating-section flex-row">
+                            <div class="rating-container-visual flex-row">
                                 <h3 class="user-rating rtn-container">8.1</h3>
                                 <h3 class="eddie-rating rtn-container">7.4</h3>
                             </div>
@@ -167,7 +170,7 @@
 
                     <!-- MOST VIRAL MUSIC -->
 
-                    <section class="viral-music flex-row hero-article">
+                    <section class="viral-music flex-row container-visual hero-article">
 
                         <img src="Styles/Images/Album_Cover/Djo-Decide.jpg" alt="music cover" srcset=""
                             class="music-cover">
@@ -197,7 +200,7 @@
 
                             </p>
 
-                            <div class="rating-section flex-row">
+                            <div class="rating-container-visual flex-row">
                                 <h3 class="user-rating rtn-container">8.1</h3>
                                 <h3 class="eddie-rating rtn-container">7.4</h3>
                             </div>
@@ -219,30 +222,32 @@
             </div>
         </div>
 
-        <!-- Feature Section -->
+        <!-- --------------- Feature Section --------------- -->
 
         <div class="features">
             <div class="inr-container">
 
-                <article class="article-container flex-row">
+                <article class="article-container container-visual flex-row">
 
                     <img src="Styles/Images/feature_1.png" alt="feature_1">
 
                     <div class="article-details flex-col flex-dead-center">
                         <h1 class="at-hd">1. Simple</h1>
-                        <p class="at-p">Unlike most rating site, your task is to which music you like and click "Submit Rating" </p>
+                        <p class="at-p">Unlike most rating site, your task is to which music you like and click "Submit
+                            Rating" </p>
 
-                        <a href="#" class=" article-cta button-outline"> Learn More </a>
+                        <a href="#" class=" article-cta button button-outline"> Learn More </a>
                     </div>
                 </article>
 
-                <article class="article-container flex-row">
+                <article class="article-container container-visual flex-row">
 
                     <div class="article-details flex-col flex-dead-center">
                         <h1 class="at-hd">2. Discover</h1>
-                        <p class="at-p">Of-course you got the user's perspective, but you have an option to check out my views of music too..</p>
+                        <p class="at-p">Of-course you got the user's perspective, but you have an option to check out my
+                            views of music too..</p>
 
-                        <a href="#" class=" article-cta button-outline"> Learn More </a>
+                        <a href="#" class=" article-cta button button-outline"> Learn More </a>
                     </div>
 
                     <img src="Styles/Images/feature_2.png" alt="feature_1">
@@ -253,7 +258,7 @@
         </div>
 
 
-        <!-- Category Section -->
+        <!-- --------------- Category Section --------------- -->
 
         <div class="category">
 
@@ -265,9 +270,9 @@
 
                     <div class="tabs-sections flex-row">
 
-                        <!-- TAB 1 -->
+                        <!-- --------------- TAB 1 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Good_Kid_Maad_City.jpg" alt="music cover" srcset=""
                                 class="music-cover">
@@ -286,15 +291,15 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
                         </section>
 
-                        <!-- TAB 2 -->
+                        <!-- --------------- TAB 2 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Goodbye_&_Good_Riddance_Album_Cover.jpg"
                                 alt="music cover" srcset="" class="music-cover">
@@ -313,15 +318,15 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
                         </section>
 
-                        <!-- TAB 3 -->
+                        <!-- --------------- TAB 3 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Graduation_(album).jpg" alt="music cover" srcset=""
                                 class="music-cover">
@@ -340,15 +345,15 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
                         </section>
 
-                        <!-- TAB 4 -->
+                        <!-- --------------- TAB 4 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Scorpion_by_Drake.jpg" alt="music cover" srcset=""
                                 class="music-cover">
@@ -367,15 +372,15 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
                         </section>
 
-                        <!-- TAB 5 -->
+                        <!-- --------------- TAB 5 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Watch_The_Throne.jpg" alt="music cover" srcset=""
                                 class="music-cover">
@@ -394,15 +399,15 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
                         </section>
 
-                        <!-- TAB 6 -->
+                        <!-- --------------- TAB 6 -->
 
-                        <section class="category-tab flex-col">
+                        <section class="category-tab container-visual flex-col">
 
                             <img src="Styles/Images/Album_Cover/Damn_Kendrick.webp" alt="music cover" srcset=""
                                 class="music-cover">
@@ -421,7 +426,7 @@
 
                                 </p>
 
-                                <a href="#" class="tab-cta button-fill">View Rating</a>
+                                <a href="#" class="tab-cta button button-fill">View Rating</a>
 
                             </div>
 
@@ -432,9 +437,57 @@
                 </div>
             </div>
         </div>
+
+        <!-- --------------- FOOTER --------------- -->
+
+        <footer>
+            <div class="inr-container flex-col flex-dead-center">
+
+                <div class="upper-section">
+                    <h2>#edrtn</h2>
+                    <h2>#eddierating</h2>
+                </div>
+
+                <div class="bottom-section flex-row">
+                    
+                    <div class="left-section flex-row">
+                        
+                        <div class="logo">
+                            <p class="alpha logo-hover-effect">e</p>
+                            <p class="alpha logo-hover-effect">d</p>
+                            <p class="alpha logo-hover-effect">r</p>
+                            <p class="alpha logo-hover-effect">t</p>
+                            <p class="alpha logo-hover-effect">n</p>
+                            <p class="domain logo-hover-effect">.com</p>
+                        </div>
+    
+                        <div class="credit flex-col">
+                            <p class="creator">Created by <a href="https://adygreg.com" target="_blank" class="name">Adrian Gregory Fernandez</a></p>
+                            <p class="copyright">©2024 eddierating.com</p>
+                            <div class="social-cta">
+                                <a href="#" class="social-icon fb-icon button button-outline"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="#" class="social-icon ig-icon button button-outline"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" class="social-icon x-icon button button-outline"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" class="social-icon tt-icon button button-outline"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#" class="social-icon yt-icon button button-outline"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="right-section flex-row">
+                        <input type="text" class="search-box" placeholder="Couldn't find what you were looking for?">
+                        <button type="submit" class="search-cta button button-fill-color"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
     </div>
 
-    <!-- Background Effect -->
+
+
+    <!-- --------------- Background Effect --------------- -->
 
     <div class="shape-group">
         <div class="circle circle-1"></div>
