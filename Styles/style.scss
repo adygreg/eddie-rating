@@ -1,23 +1,7 @@
-:root {
-    --primary-color: #35A7E7;
-    --secondary-color: #1564FD;
-    --tertiary-color: #8EB8D6;
-
-    --bg-color: #000000;
-    --font-color: #FFFFFF;
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-
-    color: var(--font-color);
-    background-color: var(--bg-color);
-
 }
 
 // NAVIGATION PANEL 
@@ -97,6 +81,29 @@ header {
 
 }
 
+.wallpaper {
+
+    position: absolute;
+    width: 115%;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    z-index: -10;
+
+    top: 30%;
+
+    img {
+        width: 100%;
+        margin-top: -1px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.blur-it {
+    filter: blur(100px);
+}
 
 // HERO SECTION
 .hero {
@@ -229,7 +236,7 @@ header {
 
                     margin-top: 12px;
                     font-size: 20px;
-                    font-weight: 100;
+                    font-weight: 200;
 
                     margin-bottom: 20px;
                 }
@@ -486,4 +493,100 @@ a {
 
 .name:hover {
     opacity: .999;
+}
+
+@media screen and (max-width: 1110px) {
+    .hero {
+        .inr-container {
+            
+            flex-direction: row;
+
+            .container-visual {
+                flex-grow: 0;
+            }
+
+            .hero-article{
+                align-items: center;
+                flex-direction: column;
+                gap: 15px;
+                .music-detail-section{
+                    gap: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            .music-of-the-week {
+                width: 100%;
+                flex-direction: column;
+                align-items: start;
+                .left-section {
+                    gap: 15px;
+                    flex-direction: column;
+                    .section-hd {
+                        display: block;
+                    }
+                }
+                .right-section {
+                    display: none;
+                }
+            }
+
+            .sub-highlight {
+                flex-direction: row;
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    .hero {
+        .inr-container {
+
+            align-items: center;
+            flex-direction: column;
+
+            .music-of-the-week {
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.5);
+                flex-direction: column;
+                align-items: start;
+                .left-section {
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .hero {
+        .inr-container {
+
+            .container-visual {
+                width: 100%;
+            }
+
+            .music-of-the-week {
+                background-color: rgba(255, 255, 255, 0.15);
+                .left-section {
+                    flex-direction: column;
+                }
+                .right-section {
+                    display: none;
+                }
+            }
+
+            .sub-highlight {
+                width: 100%;
+                flex-direction: column;
+                align-items: start;
+                .hero-article{
+                    align-items: start;
+                    background-color: rgba(255, 255, 255, 0.15);
+                }
+            }
+
+        }
+    }
 }

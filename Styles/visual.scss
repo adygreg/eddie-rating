@@ -1,3 +1,19 @@
+:root {
+    --primary-color: #378CE7;
+    --secondary-color: #67C6E3;
+    --tertiary-color: #DFF5FF;
+
+    --bg-color: black;
+    --font-color: white;
+}
+
+body {
+
+    color: var(--font-color);
+    background-color: var(--bg-color);
+
+}
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 // ------------------ MAIN CONTAINER VISUALS ------------------
@@ -29,7 +45,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 
     border-radius: 20px;
-    
+
     padding: 10px;
     margin: 5px;
 
@@ -39,12 +55,6 @@
     }
 
     transition: 1s;
-
-}
-
-.container-visual:hover {
-    cursor: pointer;
-    background-color: rgba(0, 0, 0, .6);
 
 }
 
@@ -63,6 +73,7 @@
     .user-rating {
         background-color: #95959580;
     }
+
     .user-rating:hover {
         background-color: #959595;
     }
@@ -71,6 +82,7 @@
         margin-left: 10px;
         background-color: #65656580;
     }
+
     .eddie-rating:hover {
         margin-left: 10px;
         background-color: #656565;
@@ -129,13 +141,16 @@
         font-size: 42px;
         font-weight: 600;
     }
+
     .domain {
         font-weight: 100;
     }
 }
-.logo-hover-effect{
+
+.logo-hover-effect {
     transition: .5s;
 }
+
 .logo-hover-effect:hover {
     font-size: 42px;
     padding: 0px 5px;
@@ -148,12 +163,14 @@
 // ------------------ BUTTON VISUALS ------------------
 
 .button {
+    color: var(--font-color);
     text-align: center;
     padding: 6px 24px;
     border: none;
     border-radius: 10px;
     transition: 0.3s;
 }
+
 .button:hover {
     cursor: pointer;
 }
@@ -179,7 +196,8 @@
 }
 
 .button-fill:hover {
-    color: var(--font-color);
+    opacity: 1;
+    color: black;
     background-color: var(--secondary-color)
 }
 
@@ -187,8 +205,9 @@
     color: black;
     background-color: var(--primary-color);
 }
+
 .button-fill-color:hover {
-    color: white;
+    color: black;
     background-color: var(--secondary-color);
 }
 
@@ -241,4 +260,14 @@
         background-color: var(--tertiary-color);
         box-shadow: 0px 0px 100px 200px var(--tertiary-color);
     }
+}
+
+// textstroke
+
+.text-stroke {
+    text-shadow:
+        -1px -1px 1px #000,
+        1px -1px 1px #000,
+        -1px 1px 1px #000,
+        1px 1px 1px #000;
 }
