@@ -53,7 +53,7 @@ header .inr-container .header-cta a {
 
 .wallpaper {
   position: absolute;
-  width: 115%;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
   z-index: -10;
