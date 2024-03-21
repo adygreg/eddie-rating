@@ -7,12 +7,8 @@
     --font-color: white;
 }
 
-html {
-    zoom: 120%;
-}
-
 body {
-
+    zoom: 120%;
     color: var(--font-color);
     background-color: var(--bg-color);
 
@@ -158,6 +154,7 @@ body {
 }
 
 .logo-hover-effect:hover {
+    cursor: pointer;
     font-size: 42px;
     padding: 0px 5px;
     font-weight: 600;

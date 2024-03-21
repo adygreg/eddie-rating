@@ -4,62 +4,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/visual.css">
-    <link rel="stylesheet" href="Styles/style.css">
-    <title>EddieRating | Baised-free music rating platform</title>
+    <link rel="stylesheet" href="Styles/branding.css">
+    <link rel="stylesheet" href="Styles/navigation.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="stylesheet" href="Styles/universal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Home Page | Eddierating</title>
 </head>
 
 <body>
-    <div class="mn-container flex-col">
+    <div class="main-container">
 
-        <!-- Navigation Bar -->
+        <!-- -------------------- NAVIGATION BAR -------------------- -->
+        <nav class="navigation-bar">
+            <div class="inner-container">
 
-        <nav>
-            <div class="inr-container">
-                <div class="left-section">
-                    <div class="logo flex-row">
-                        <p class="alpha">e</p>
-                        <p class="alpha">d</p>
-                        <p class="alpha">r</p>
-                        <p class="alpha">t</p>
-                        <p class="alpha">n</p>
-                        <p class="beta">.com</p>
+                <!-- --------------------- Brand Logo --------------------- -->
+                <!-- this section has it's own css file called branding.css -->
+
+                <div class="branding">
+
+                    <div class="logo">
+                        <p class="logo-1">E</p>
+                        <p class="logo-2">D</p>
+                        <p class="logo-3">D</p>
+                        <p class="logo-4">I</p>
+                        <p class="logo-5">E</p>
+                        <p class="logo-6">R</p>
+                        <p class="logo-7">A</p>
+                        <p class="logo-8">T</p>
+                        <p class="logo-9">I</p>
+                        <p class="logo-10">N</p>
+                        <p class="logo-11">G</p>
                     </div>
+
+                    <div class="credit">
+                        <p class="creators-name"><a href="https://adygreg.com/" target="_blank"
+                                class="link-style">adygreg</a></p>
+                    </div>
+
                 </div>
-                <div class="right-section">
-                    <ul class="nav-cta hide-me">
-                        <li><a href="#" class="button-clear">Ratings</a></li>
-                        <li><a href="#" class="button-clear">About</a></li>
-                        <li><a href="#" class="button-clear">Contact</a></li>
-                        <li><a href="#" class="button-clear">Donate</a></li>
+
+                <!-- -------------------- Brand Logo End -------------------- -->
+
+                <!-- -------------------- Navigation CTAs -------------------- -->
+
+                <div class="nav-ctas">
+                    <ul class="link-list">
+                        <li class="menu-item-back menu-item-3"> <a href="#" class="link-style">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                                <h3>Explore</h3>
+                            </a> </li>
+                        <li class="menu-item-back menu-item-2"> <a href="#" class="link-style">
+                                <i class="fa-solid fa-ranking-star"></i>
+                                <h3>Chart</h3>
+                            </a> </li>
+                        <li class="menu-item"> <a href="#" class="link-style">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <h3>About</h3>
+                            </a> </li>
+                        <li class="menu-item"> <a href="#" class="link-style">
+                                <i class="fa-solid fa-mug-saucer"></i>
+                                <h3>Coffee</h3>
+                            </a> </li>
+                        <li class="menu">
+                                <button type="button" class="link-style">
+                                    <i class="fa-solid fa-square-caret-down"></i>
+                                </button>
+                        </li>
                     </ul>
                 </div>
+
+                <!-- -------------------- Navigation CTAs End -------------------- -->
+
+                <!-- -------------------- Search Bar -------------------- -->
+
+                <div class="search-bar">
+                    <input type="text" name="" id="" placeholder="Search...">
+                    <button type="submit" class="button-style-2"><i
+                            class="fa-solid fa-magnifying-glass-arrow-right"></i></button>
+                </div>
+
+                <!-- -------------------- Search Bar End -------------------- -->
+
             </div>
         </nav>
 
-        <!-- Header -->
+        <!-- -------------------- NAVIGATION BAR END -------------------- -->
 
-        <header class="flex-dead-center">
-            <div class="inr-container flex-col flex-dead-center">
-                <h3 class="bin-hd">Welcome to</h3>
-                <h1 class="mn-hd">EddieRating.com</h1>
-                <p class="p-hd">Unfortunately the website is <mark style="padding: 0px 10px; border-radius: 3px;">NOT COMPLETE.</mark> <br> It's still under development. <br> But if you want you could still preview the website, make sure to click the "open anyways" button down-below </p>
-                <p class="p-hd" style="font-family: 'Courier New', Courier, monospace;">Change Log: Added Category Section</p>
 
-                <div class="header-cta">
-                    <a href="homepage.html" class="button-outline"> Open Anyways </a>
-                    <a href="#" class="button-outline throw-me"> Learn More </a>
+
+        <!-- -------------------- MAIN SECTION -------------------- -->
+
+        <section class="main-section">
+            <div class="inner-container">
+
+                <header class="hero">
+                    <div class="upper-section">
+                        <h3>Welcome to</h3>
+                        <h1>the ultimate music rating platform!</h1>
+                    </div>
+                    <div class="bottom-section">
+                        <a href="#" class="button-style">Dive In</a>
+                        <p>Get ready to discover the tunes that hit all the right notes.</p>
+                    </div>
+                </header>
+
+                <div class="category-section">
+                    <div class="overflow-fix">
+                        <div class="scroll-view">
+                            
+                            <section class="tab">
+                                <img src="Images/idk.jpg" alt="">
+                                <div class="right-section">
+                                    <div class="details">
+                                        <h6>music of the day</h6>
+                                        <h1 class="music-title">That's me</h1>
+                                        <div class="extra">
+                                            <h3 class="album-name">My Face</h3>
+                                            <h3 class="artist-name">AdyGreg</h3>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="button-style-2"> learn more </a>
+                                </div>
+                            </section>
+                            
+                            <section class="tab">
+                                <img src="Images/idk.jpg" alt="">
+                                <div class="right-section">
+                                    <div class="details">
+                                        <h6>music of the day</h6>
+                                        <h1 class="music-title">That's me</h1>
+                                        <div class="extra">
+                                            <h3 class="album-name">My Face</h3>
+                                            <h3 class="artist-name">AdyGreg</h3>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="button-style-2"> learn more </a>
+                                </div>
+                            </section>
+
+                            <section class="tab">
+                                <img src="Images/idk.jpg" alt="">
+                                <div class="right-section">
+                                    <div class="details">
+                                        <h6>music of the day</h6>
+                                        <h1 class="music-title">That's me</h1>
+                                        <div class="extra">
+                                            <h3 class="album-name">My Face</h3>
+                                            <h3 class="artist-name">AdyGreg</h3>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="button-style-2"> learn more </a>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="tab-nav">
+                        <button type="button" class="button-style button-left"><i
+                                class="fa-solid fa-caret-left"></i></button>
+                        <button type="button" class="button-style button-right"><i
+                                class="fa-solid fa-caret-right"></i></button>
+                    </div>
+
                 </div>
             </div>
-        </header>
+        </section>
 
-    <!-- Background Effect -->
 
-    <div class="shape-group">
-        <div class="circle circle-1"></div>
-        <div class="circle circle-2"></div>
-        <div class="circle circle-3"></div>
-    </div>
+        <!-- -------------------- MAIN SECTION END -------------------- -->
+
+        <div class="branding bd-mobile">
+
+            <div class="logo">
+                <p class="logo-1">E</p>
+                <p class="logo-2">D</p>
+                <p class="logo-3">D</p>
+                <p class="logo-4">I</p>
+                <p class="logo-5">E</p>
+                <p class="logo-6">R</p>
+                <p class="logo-7">A</p>
+                <p class="logo-8">T</p>
+                <p class="logo-9">I</p>
+                <p class="logo-10">N</p>
+                <p class="logo-11">G</p>
+            </div>
+
+            <div class="credit">
+                <p class="creators-name"><a href="https://adygreg.com/" target="_blank"
+                        class="link-style">adygreg</a></p>
+            </div>
+        </div>
+
+        </div>
 
     </div>
 </body>

@@ -1,0 +1,214 @@
+@charset "UTF-8";
+.main-section {
+  flex: 1;
+  overflow: hidden;
+}
+.main-section .hero {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 30px;
+}
+.main-section .hero .upper-section {
+  display: inherit;
+  flex-direction: column;
+}
+.main-section .hero .upper-section * {
+  text-align: center;
+}
+.main-section .hero .upper-section h3 {
+  font-weight: 400;
+  font-size: 40px;
+  margin-bottom: -12px;
+}
+.main-section .hero .upper-section h1 {
+  font-weight: 500;
+  font-size: 52px;
+}
+.main-section .hero .bottom-section {
+  display: inherit;
+  justify-items: center;
+  align-items: center;
+  width: 80%;
+  gap: 50px;
+}
+.main-section .hero .bottom-section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.main-section .hero .bottom-section p {
+  font-size: 38px;
+}
+.main-section .overflow-fix {
+  overflow: scroll;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+.main-section .category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.main-section .scroll-view {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 20px;
+}
+.main-section .scroll-view .tab {
+  display: flex;
+  border: 6px solid var(--text-color);
+  border-radius: 25px;
+  overflow: hidden;
+  gap: 30px;
+  box-shadow: 8px 8px 0px var(--highlight-color);
+}
+.main-section .scroll-view .tab img {
+  width: 300px;
+  height: 300px;
+}
+.main-section .scroll-view .tab .right-section {
+  width: 100%;
+  align-items: end;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-section .scroll-view .tab .right-section .details {
+  margin-left: 200px;
+  flex-grow: 1;
+  justify-content: center;
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.main-section .scroll-view .tab .right-section .details h6 {
+  font-weight: 300;
+  font-size: 34px;
+}
+.main-section .scroll-view .tab .right-section .details .music-title {
+  font-size: 52px;
+  margin-bottom: -24px;
+}
+.main-section .scroll-view .tab .right-section .details .extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main-section .scroll-view .tab .right-section .details .extra .album-name {
+  font-size: 40px;
+  font-weight: 400;
+}
+.main-section .scroll-view .tab .right-section .details .extra .artist-name::before {
+  content: "• ";
+}
+.main-section .scroll-view .tab .right-section .details .extra .artist-name {
+  font-size: 40px;
+  font-weight: 500;
+}
+.main-section .tab-nav {
+  display: inherit;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+.main-section .tab-nav .button-style {
+  font-size: 45px;
+  padding: 0px 40px;
+}
+.main-section .tab-nav .button-right {
+  z-index: 1;
+}
+
+.bd-mobile {
+  display: none;
+  margin-top: -15px;
+  align-items: center;
+  color: var(--container-bg-color);
+}
+.bd-mobile * {
+  text-shadow: 2px 2px 0px var(--text-color), -2px 2px 0px var(--text-color), -2px -2px 0px var(--text-color), 2px -2px 0px var(--text-color);
+}
+.bd-mobile a {
+  color: var(--container-bg-color);
+}
+
+@media screen and (max-width: 1490px) {
+  .main-section .hero .bottom-section p {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 1345px) {
+  .main-section {
+    overflow: visible;
+  }
+  .main-section .inner-container {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 970px) {
+  .main-section .hero {
+    gap: 5px;
+  }
+  .main-section .hero .upper-section h3 {
+    font-size: 32px;
+  }
+  .main-section .hero .upper-section h1 {
+    font-size: 42px;
+  }
+  .main-section .hero .bottom-section a {
+    font-size: 21px;
+  }
+  .main-section .hero .bottom-section p {
+    font-size: 21px;
+  }
+}
+@media screen and (max-width: 810px) {
+  .main-section .hero {
+    display: none;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    gap: 10px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details {
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details h6 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .music-title {
+    font-size: 40px;
+    margin-bottom: -20px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra {
+    display: flex;
+    gap: 5px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .album-name {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .artist-name::before {
+    content: "• ";
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .artist-name {
+    font-size: 26px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 455px) {
+  .bd-mobile {
+    display: flex;
+  }
+}/*# sourceMappingURL=main.css.map */

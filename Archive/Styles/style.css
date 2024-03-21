@@ -66,7 +66,7 @@ header .inr-container .header-cta a {
 }
 
 .blur-it {
-  filter: blur(100px);
+  filter: blur(0px);
 }
 
 .hero .inr-container .music-of-the-week .left-section {
@@ -163,22 +163,23 @@ header .inr-container .header-cta a {
   font-weight: 500;
   text-shadow: 2px 2px 3px black;
 }
-.category .inr-container .tabs-sections .category-tab {
+
+.category-tab {
   row-gap: 10px;
   background-color: rgba(30, 30, 30, 0.5);
   width: 250px;
 }
-.category .inr-container .tabs-sections .category-tab img {
+.category-tab img {
   height: 250px;
   border-radius: 15px;
 }
-.category .inr-container .tabs-sections .category-tab .detail-section {
+.category-tab .detail-section {
   margin-left: 10px;
   row-gap: 5px;
   padding-bottom: 20px;
   justify-content: space-evenly;
 }
-.category .inr-container .tabs-sections .category-tab .detail-section .album-title {
+.category-tab .detail-section .album-title {
   max-width: 100%;
   white-space: nowrap;
   overflow: hidden;
@@ -187,18 +188,19 @@ header .inr-container .header-cta a {
   font-size: 26px;
   font-weight: 500;
 }
-.category .inr-container .tabs-sections .category-tab .detail-section .artist-names::before {
+.category-tab .detail-section .artist-names::before {
   content: "by ";
 }
-.category .inr-container .tabs-sections .category-tab .detail-section .artist-name {
+.category-tab .detail-section .artist-name {
   font-weight: 300;
 }
-.category .inr-container .tabs-sections .category-tab .detail-section .tab-cta {
+.category-tab .detail-section .tab-cta {
   margin-top: 20px;
   font-size: 18px;
   padding: 10px 24px;
 }
-.category .inr-container .tabs-sections .category-tab:hover {
+
+.category-tab:hover {
   background-color: rgba(50, 50, 50, 0.5);
 }
 
@@ -243,6 +245,42 @@ footer .inr-container .bottom-section .right-section .search-box {
 }
 footer .inr-container .bottom-section .right-section .search-cta {
   border-radius: 50px;
+}
+
+.catalog .inr-container {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+}
+
+.vertical-tab {
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+.vertical-tab .left-section {
+  gap: 10px;
+  display: inherit;
+  align-items: center;
+}
+.vertical-tab .left-section img {
+  width: 50px;
+  height: inherit;
+  border-radius: 5px;
+}
+.vertical-tab .middle-section * {
+  text-align: center;
+}
+.vertical-tab .middle-section .album-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.vertical-tab .right-section {
+  gap: 10px;
+  display: inherit;
+  align-items: center;
+}
+.vertical-tab .right-section .tab-cta {
+  padding: 10px 20px;
 }
 
 .throw-me {
@@ -332,12 +370,13 @@ a {
 @media screen and (max-width: 1110px) {
   .hero .inr-container {
     flex-direction: row;
+    justify-content: space-between;
   }
   .hero .inr-container .container-visual {
     flex-grow: 0;
   }
   .hero .inr-container .hero-article {
-    align-items: center;
+    align-items: start;
     flex-direction: column;
     gap: 15px;
   }
@@ -346,7 +385,6 @@ a {
     margin-bottom: 10px;
   }
   .hero .inr-container .music-of-the-week {
-    width: 100%;
     flex-direction: column;
     align-items: start;
   }
@@ -364,7 +402,7 @@ a {
     flex-direction: row;
   }
 }
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 930px) {
   .hero .inr-container {
     align-items: center;
     flex-direction: column;

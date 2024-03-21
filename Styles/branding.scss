@@ -1,0 +1,80 @@
+// Logo Exclusive
+
+.branding {
+
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .logo {
+
+        margin-bottom: -16px;
+        display: inherit;
+        align-items: center;
+
+        p {
+            font-weight: 600;
+        }
+
+        .logo-1 {
+            font-size: 52px;
+        }
+
+        .logo-2 {
+            font-size: 48px;
+        }
+
+        .logo-3 {
+            font-size: 44px;
+        }
+
+        .logo-4 {
+            font-size: 42px;
+        }
+
+        .logo-5 {
+            font-size: 40px;
+        }
+
+        .logo-6 {
+            font-size: 38px;
+        }
+
+        .logo-7 {
+            font-size: 36px;
+        }
+
+        .logo-8 {
+            margin-left: -5px;
+            font-size: 40px;
+        }
+
+        .logo-9 {
+            font-size: 44px;
+        }
+
+        .logo-10 {
+            font-size: 46px;
+        }
+
+        .logo-11 {
+            font-size: 48px;
+        }
+
+    }
+
+    .credit {
+
+        .creators-name {
+
+            font-size: 20px;
+
+            text-align: end;
+
+        }
+
+        .creators-name::before {
+            content: "by ";
+        }
+    }
+}

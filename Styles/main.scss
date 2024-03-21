@@ -1,0 +1,298 @@
+.main-section {
+
+    flex: 1;
+    overflow: hidden;
+
+    .hero {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        padding: 30px 30px;
+
+        .upper-section {
+
+            display: inherit;
+            flex-direction: column;
+
+            * {
+                text-align: center;
+            }
+
+            h3 {
+                font-weight: 400;
+                font-size: 40px;
+                margin-bottom: -12px;
+            }
+
+            h1 {
+                font-weight: 500;
+                font-size: 52px;
+            }
+        }
+
+        .bottom-section {
+            display: inherit;
+            justify-items: center;
+            align-items: center;
+            width: 80%;
+            gap: 50px;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 300px;
+            }
+
+            p {
+                font-size: 38px;
+            }
+        }
+    }
+
+    .overflow-fix {
+        overflow: scroll;
+        padding-bottom: 10px;
+        scrollbar-width: none;
+    }
+
+    .category-section {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .scroll-view {
+        display: flex;
+        width: fit-content;
+        gap: 20px;
+
+        .tab {
+
+            display: flex;
+
+            border: 6px solid var(--text-color);
+            border-radius: 25px;
+
+            overflow: hidden;
+
+            gap: 30px;
+
+            box-shadow: 8px 8px 0px var(--highlight-color);
+
+            img {
+                width: 300px;
+                height: 300px;
+            }
+
+            .right-section {
+
+                width: 100%;
+                align-items: end;
+                display: inherit;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .details {
+
+                    margin-left: 200px;
+
+                    flex-grow: 1;
+                    justify-content: center;
+                    display: inherit;
+                    flex-direction: column;
+                    width: 100%;
+                    gap: 15px;
+
+                    h6 {
+                        font-weight: 300;
+                        font-size: 34px;
+                    }
+
+                    .music-title {
+                        font-size: 52px;
+                        margin-bottom: -24px;
+                    }
+
+                    .extra {
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+
+                        .album-name {
+                            font-size: 40px;
+                            font-weight: 400;
+                        }
+
+                        .artist-name::before {
+                            content: '• ';
+                        }
+
+                        .artist-name {
+                            font-size: 40px;
+                            font-weight: 500;
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    .tab-nav {
+        display: inherit;
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+
+        .button-style {
+            font-size: 45px;
+            padding: 0px 40px;
+        }
+
+        .button-right {
+            z-index: 1;
+        }
+    }
+}
+
+.bd-mobile {
+    display: none;
+    margin-top: -15px;
+    * {
+        text-shadow: 2px 2px 0px var(--text-color),
+        -2px 2px 0px var(--text-color),
+        -2px -2px 0px var(--text-color),
+        2px -2px 0px var(--text-color);
+    }
+    align-items: center;
+    color: var(--container-bg-color);
+    a {
+        color: var(--container-bg-color);
+    }
+}
+
+@media screen and (max-width: 1490px) {
+    .main-section {
+        .hero {
+            .bottom-section {
+                p {
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1345px) {
+    .main-section {
+        overflow: visible;
+
+        .inner-container {
+            gap: 50px;
+        }
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .main-section {
+        .hero {
+            gap: 5px;
+
+            .upper-section {
+                h3 {
+                    font-size: 32px;
+                }
+
+                h1 {
+                    font-size: 42px;
+                }
+            }
+
+            .bottom-section {
+                a {
+                    font-size: 21px;
+                }
+
+                p {
+                    font-size: 21px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .main-section {
+
+        .hero {
+            display: none;
+        }
+
+        .category-section {
+            .overflow-fix {
+                .scroll-view {
+                    .tab {
+                        display: flex;
+                        flex-direction: column;
+                        width: 310px;
+                        gap: 10px;
+
+                        .right-section {
+                            
+                            
+                            .details {
+                                
+                                padding: 0px 20px;
+                                margin-bottom: 50px;
+
+                                h6 {
+                                    font-weight: 400;
+                                    font-size: 26px;
+                                }
+
+                                .music-title {
+                                    font-size: 40px;
+                                    margin-bottom: -20px;
+                                }
+
+                                .extra {
+                                    display: flex;
+                                    gap: 5px;
+
+                                    .album-name {
+                                        font-size: 26px;
+                                        font-weight: 400;
+                                    }
+
+                                    .artist-name::before {
+                                        content: '• ';
+                                    }
+
+                                    .artist-name {
+                                        font-size: 26px;
+                                        font-weight: 500;
+                                    }
+                                }
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .bd-mobile {
+        display: flex;
+    }
+}

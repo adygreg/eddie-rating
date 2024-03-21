@@ -1,0 +1,54 @@
+.branding {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.branding .logo {
+  margin-bottom: -16px;
+  display: inherit;
+  align-items: center;
+}
+.branding .logo p {
+  font-weight: 600;
+}
+.branding .logo .logo-1 {
+  font-size: 52px;
+}
+.branding .logo .logo-2 {
+  font-size: 48px;
+}
+.branding .logo .logo-3 {
+  font-size: 44px;
+}
+.branding .logo .logo-4 {
+  font-size: 42px;
+}
+.branding .logo .logo-5 {
+  font-size: 40px;
+}
+.branding .logo .logo-6 {
+  font-size: 38px;
+}
+.branding .logo .logo-7 {
+  font-size: 36px;
+}
+.branding .logo .logo-8 {
+  margin-left: -5px;
+  font-size: 40px;
+}
+.branding .logo .logo-9 {
+  font-size: 44px;
+}
+.branding .logo .logo-10 {
+  font-size: 46px;
+}
+.branding .logo .logo-11 {
+  font-size: 48px;
+}
+.branding .credit .creators-name {
+  font-size: 20px;
+  text-align: end;
+}
+.branding .credit .creators-name::before {
+  content: "by ";
+}/*# sourceMappingURL=branding.css.map */
