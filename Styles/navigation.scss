@@ -211,10 +211,16 @@
 
 @media screen and (max-width: 455px) {
     .navigation-bar {
+
+        .inner-container {
+            padding: 5px 20px;
+        }
+
         .branding{
             display: none;
         }
         .nav-ctas {
+
             width: 100%;
 
             .link-list {
@@ -227,17 +233,17 @@
                     a {
                         flex-direction: column;
                         i {
-                            font-size: 50px;
+                            font-size: 40px;
                         }
                         h3 {
-                            font-size: 25px;
+                            font-size: 20px;
                         }
                     }
                 }
 
                 .menu {
                     transform: rotate(180deg);
-                    font-size: 75px;
+                    margin-bottom: 5px;
                 }
 
             }

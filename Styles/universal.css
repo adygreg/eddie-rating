@@ -138,11 +138,11 @@
   }
 }
 @media screen and (max-width: 455px) {
-  .main-container {
-    flex-direction: column-reverse;
-    height: inherit;
+  html {
+    zoom: 85%;
   }
-  .inner-container {
-    padding: 20px;
+  .main-container {
+    height: 100vh;
+    flex-direction: column-reverse;
   }
 }/*# sourceMappingURL=universal.css.map */

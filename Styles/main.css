@@ -126,22 +126,6 @@
   z-index: 1;
 }
 
-.bd-mobile {
-  display: none;
-  margin-top: -15px;
-  align-items: center;
-  color: var(--container-bg-color);
-}
-.bd-mobile * {
-  text-shadow: 2px 2px 0px var(--text-color), -2px 2px 0px var(--text-color), -2px -2px 0px var(--text-color), 2px -2px 0px var(--text-color);
-}
-.bd-mobile .credit {
-  width: 67%;
-}
-.bd-mobile .credit p a {
-  color: var(--container-bg-color);
-}
-
 @media screen and (max-width: 1490px) {
   .main-section .hero .bottom-section p {
     font-size: 30px;
@@ -211,7 +195,34 @@
   }
 }
 @media screen and (max-width: 455px) {
-  .bd-mobile {
-    display: flex;
+  .main-section {
+    overflow: auto;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab {
+    width: 245px;
+    gap: 10px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab img {
+    width: 245px;
+    height: 245px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details {
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details h6 {
+    font-size: 22px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .music-title {
+    font-size: 30px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .album-name {
+    font-size: 22px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .artist-name {
+    font-size: 22px;
+  }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section a {
+    font-size: 25px;
   }
 }/*# sourceMappingURL=main.css.map */

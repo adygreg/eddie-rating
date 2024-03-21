@@ -78,3 +78,34 @@
         }
     }
 }
+
+
+.bd-mobile {
+    display: none;
+    margin-top: -15px;
+
+    * {
+        text-shadow: 2px 2px 0px var(--text-color),
+            -2px 2px 0px var(--text-color),
+            -2px -2px 0px var(--text-color),
+            2px -2px 0px var(--text-color);
+    }
+
+    align-items: center;
+    color: var(--container-bg-color);
+
+    .credit {
+        width: 67%;
+        p {
+            a {
+                color: var(--container-bg-color);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 455px) {
+    .bd-mobile {
+        display: flex;
+    }
+}

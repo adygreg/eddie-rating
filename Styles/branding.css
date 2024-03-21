@@ -51,4 +51,26 @@
 }
 .branding .credit .creators-name::before {
   content: "by ";
+}
+
+.bd-mobile {
+  display: none;
+  margin-top: -15px;
+  align-items: center;
+  color: var(--container-bg-color);
+}
+.bd-mobile * {
+  text-shadow: 2px 2px 0px var(--text-color), -2px 2px 0px var(--text-color), -2px -2px 0px var(--text-color), 2px -2px 0px var(--text-color);
+}
+.bd-mobile .credit {
+  width: 67%;
+}
+.bd-mobile .credit p a {
+  color: var(--container-bg-color);
+}
+
+@media screen and (max-width: 455px) {
+  .bd-mobile {
+    display: flex;
+  }
 }/*# sourceMappingURL=branding.css.map */

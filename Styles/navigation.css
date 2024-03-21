@@ -124,6 +124,9 @@
   }
 }
 @media screen and (max-width: 455px) {
+  .navigation-bar .inner-container {
+    padding: 5px 20px;
+  }
   .navigation-bar .branding {
     display: none;
   }
@@ -141,13 +144,13 @@
     flex-direction: column;
   }
   .navigation-bar .nav-ctas .link-list .menu-item-back a i {
-    font-size: 50px;
+    font-size: 40px;
   }
   .navigation-bar .nav-ctas .link-list .menu-item-back a h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
   .navigation-bar .nav-ctas .link-list .menu {
     transform: rotate(180deg);
-    font-size: 75px;
+    margin-bottom: 5px;
   }
 }/*# sourceMappingURL=navigation.css.map */
