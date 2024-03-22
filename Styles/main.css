@@ -48,6 +48,7 @@
   overflow: scroll;
   padding-bottom: 10px;
   scrollbar-width: none;
+  border-radius: 26px;
 }
 .main-section .category-section {
   display: flex;
@@ -197,6 +198,10 @@
 @media screen and (max-width: 455px) {
   .main-section {
     overflow: auto;
+  }
+  .main-section .category-section {
+    flex: 1;
+    justify-content: center;
   }
   .main-section .category-section .overflow-fix .scroll-view .tab {
     width: 245px;

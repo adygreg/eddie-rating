@@ -75,9 +75,13 @@
 @media screen and (max-width: 455px) {
   .bd-mobile {
     display: flex;
-    position: absolute;
-    top: -9%;
+    position: relative;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+@media screen and (max-height: 850px) {
+  .bd-mobile {
+    display: none;
   }
 }/*# sourceMappingURL=branding.css.map */

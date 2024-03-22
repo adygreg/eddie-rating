@@ -58,6 +58,7 @@
         overflow: scroll;
         padding-bottom: 10px;
         scrollbar-width: none;
+        border-radius: 26px;
     }
 
     .category-section {
@@ -280,9 +281,12 @@
         overflow: auto;
 
         .category-section {
+            flex: 1;
+            justify-content: center;
             .overflow-fix {
                 .scroll-view {
                     .tab {
+
                         width: 245px;
                         gap: 10px;
 
