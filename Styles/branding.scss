@@ -64,7 +64,7 @@
     }
 
     .credit {
-
+        width: 100%;
         .creators-name {
 
             font-size: 20px;
@@ -107,5 +107,9 @@
 @media screen and (max-width: 455px) {
     .bd-mobile {
         display: flex;
+        position: absolute;
+        top: -9%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

@@ -45,6 +45,9 @@
 .branding .logo .logo-11 {
   font-size: 48px;
 }
+.branding .credit {
+  width: 100%;
+}
 .branding .credit .creators-name {
   font-size: 20px;
   text-align: end;
@@ -72,5 +75,9 @@
 @media screen and (max-width: 455px) {
   .bd-mobile {
     display: flex;
+    position: absolute;
+    top: -9%;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }/*# sourceMappingURL=branding.css.map */
