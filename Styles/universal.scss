@@ -144,6 +144,10 @@ body {
     border: 2px solid var(--shadow-color-op10);
 }
 
+.link-style:active {
+    transform: translateX(10px);
+}
+
 .hide-me {
     opacity: 0;
 }
@@ -158,9 +162,16 @@ body {
         flex-direction: column;
         height: inherit;
     }
+
     .inner-container {
         padding: 20px;
     }
+
+    .link-style:active {
+        transform: translateX(0px);
+        transform: translateY(10px);
+    }
+
 }
 
 @media screen and (max-width: 455px) {
@@ -172,5 +183,9 @@ body {
     .main-container {
         height: 100vh;
         flex-direction: column-reverse;
+    }
+
+    .link-style:active {
+        transform: translateY(-10px);
     }
 }

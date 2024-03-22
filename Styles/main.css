@@ -94,6 +94,9 @@
   font-size: 34px;
 }
 .main-section .scroll-view .tab .right-section .details .music-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   font-size: 52px;
   margin-bottom: -24px;
 }
@@ -105,6 +108,9 @@
 .main-section .scroll-view .tab .right-section .details .extra .album-name {
   font-size: 40px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-section .scroll-view .tab .right-section .details .extra .artist-name::before {
   content: "• ";
@@ -112,6 +118,9 @@
 .main-section .scroll-view .tab .right-section .details .extra .artist-name {
   font-size: 40px;
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .main-section .tab-nav {
   display: inherit;
@@ -167,7 +176,11 @@
     width: 310px;
     gap: 10px;
   }
+  .main-section .category-section .overflow-fix .scroll-view .tab .right-section {
+    flex: 1;
+  }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details {
+    justify-content: start;
     padding: 0px 20px;
     margin-bottom: 50px;
   }
@@ -181,6 +194,8 @@
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra {
     display: flex;
+    flex-direction: column;
+    align-items: start;
     gap: 5px;
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .album-name {
@@ -188,11 +203,12 @@
     font-weight: 400;
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .artist-name::before {
-    content: "• ";
+    content: "♫ ";
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .extra .artist-name {
     font-size: 26px;
     font-weight: 500;
+    margin-bottom: -8px;
   }
 }
 @media screen and (max-width: 455px) {
@@ -216,7 +232,7 @@
     margin-bottom: 50px;
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details h6 {
-    font-size: 22px;
+    font-size: 20px;
   }
   .main-section .category-section .overflow-fix .scroll-view .tab .right-section .details .music-title {
     font-size: 30px;

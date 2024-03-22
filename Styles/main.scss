@@ -115,6 +115,11 @@
                     }
 
                     .music-title {
+
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
                         font-size: 52px;
                         margin-bottom: -24px;
                     }
@@ -127,6 +132,10 @@
                         .album-name {
                             font-size: 40px;
                             font-weight: 400;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+
                         }
 
                         .artist-name::before {
@@ -136,6 +145,10 @@
                         .artist-name {
                             font-size: 40px;
                             font-weight: 500;
+
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
                         }
                     }
 
@@ -230,10 +243,9 @@
                         gap: 10px;
 
                         .right-section {
-
-
+                            flex: 1;
                             .details {
-
+                                justify-content: start;
                                 padding: 0px 20px;
                                 margin-bottom: 50px;
 
@@ -249,6 +261,8 @@
 
                                 .extra {
                                     display: flex;
+                                    flex-direction: column;
+                                    align-items: start;
                                     gap: 5px;
 
                                     .album-name {
@@ -257,12 +271,13 @@
                                     }
 
                                     .artist-name::before {
-                                        content: '• ';
+                                        content: '♫ ';
                                     }
 
                                     .artist-name {
                                         font-size: 26px;
                                         font-weight: 500;
+                                        margin-bottom: -8px;
                                     }
                                 }
 
@@ -275,6 +290,7 @@
         }
     }
 }
+
 @media screen and (max-width: 455px) {
     .main-section {
 
@@ -283,6 +299,7 @@
         .category-section {
             flex: 1;
             justify-content: center;
+
             .overflow-fix {
                 .scroll-view {
                     .tab {
@@ -303,7 +320,7 @@
                                 margin-bottom: 50px;
 
                                 h6 {
-                                    font-size: 22px;
+                                    font-size: 20px;
                                 }
 
                                 .music-title {
@@ -314,6 +331,7 @@
                                     .album-name {
                                         font-size: 22px;
                                     }
+
                                     .artist-name {
                                         font-size: 22px;
                                     }
