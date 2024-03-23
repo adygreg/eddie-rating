@@ -86,7 +86,7 @@ body {
   text-align: center;
 }
 .table-style tr td {
-  border: 0px;
+  border: 5px solid rgba(0, 0, 0, 0);
   font-weight: 400;
   background-color: var(--container-bg-color);
 }
@@ -95,6 +95,7 @@ body {
 }
 .table-style tr:hover td,
 .table-style tr:hover:nth-child(even) td {
+  border: 5px solid var(--highlight-color-op25);
   cursor: pointer;
   background-color: var(--highlight-color-op50);
 }
