@@ -78,6 +78,230 @@ body {
 
 }
 
+// TABLE 
+
+.table-style {
+
+    border-spacing: 10px;
+
+    caption {
+        font-size: 50px;
+        text-align: start;
+        border-radius: 15px;
+        padding-left: 25px;
+        margin: 10px;
+        margin-bottom: 0px;
+    }
+
+    tr {
+
+        th,
+        td {
+            padding: 10px;
+            border: 5px solid var(--text-color);
+            border-radius: 15px;
+            background-color: var(--highlight-color);
+
+            font-size: 32px;
+            font-weight: 500;
+
+            text-align: center;
+        }
+
+        td {
+            border: 0px;
+            font-weight: 400;
+            background-color: var(--container-bg-color);
+        }
+
+    }
+
+
+    tr:nth-child(even) {
+        td {
+            background-color: #f3f3f3;
+        }
+    }
+
+    tr:hover,
+    tr:hover:nth-child(even) {
+        td {
+            cursor: pointer;
+            background-color: var(--highlight-color-op50);
+        }
+    }
+}
+
+.table-sortable {
+    th {
+        cursor: pointer;
+    }
+
+    .th-sort-asc,
+    .th-sort-desc {
+        background: var(--shadow-color-op10);
+    }
+
+    .th-sort-asc::after {
+        content: "\25b4";
+        margin-left: 5px;
+    }
+
+    .th-sort-desc::after {
+        content: "\25be";
+        margin-left: 5px;
+    }
+
+}
+
+// BOX IT --------------------------------------------
+
+.box-it {
+    border: 5px solid var(--text-color);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.box-it-fill {
+    background-color: var(--highlight-color);
+    border: 5px solid var(--text-color);
+    text-align: center;
+    border-radius: 15px;
+}
+
+// TAB STYLE --------------------------------------------
+
+.tab-style {
+
+    display: flex;
+
+    border: 6px solid var(--text-color);
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    gap: 30px;
+
+    box-shadow: 8px 8px 0px var(--highlight-color);
+
+    img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .right-section {
+
+        width: 600px;
+        align-items: end;
+        display: inherit;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .details {
+
+            margin-left: 200px;
+
+            flex-grow: 1;
+            justify-content: center;
+            display: inherit;
+            flex-direction: column;
+            width: 100%;
+            gap: 15px;
+
+            h6 {
+                font-weight: 300;
+                font-size: 34px;
+            }
+
+            .music-title {
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                font-size: 52px;
+                margin-bottom: -24px;
+            }
+
+            .extra {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .album-name {
+                    font-size: 40px;
+                    font-weight: 400;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+
+                }
+
+                .artist-name::before {
+                    content: '• ';
+                }
+
+                .artist-name {
+                    font-size: 40px;
+                    font-weight: 500;
+
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+
+        }
+
+        .stats {
+            position: relative;
+            bottom: 25px;
+            display: inherit;
+            gap: 10px;
+            width: 100%;
+            justify-content: end;
+            padding: 0px 50px;
+
+            .stat-container {
+                display: inherit;
+                flex-direction: column;
+                align-items: center;
+
+                .total-votes,
+                .avg-rating {
+                    width: 130px;
+                    font-weight: 500;
+                    font-size: 42px;
+                }
+
+                h3 {
+                    margin-top: -4px;
+                    font-weight: 500;
+                    font-size: 24px;
+                }
+            }
+
+        }
+
+
+    }
+}
+
+.tab-style-hd {
+
+    .right-section {
+        width: 100%;
+
+        .details {
+            .extra {
+                .artist-name::before {
+                    content: "";
+                }
+            }
+        }
+    }
+
+}
 
 // BUTTON STYLE --------------------------------------------
 
@@ -148,6 +372,7 @@ body {
     transform: translateX(10px);
 }
 
+// VISIBLITY --------------------------------------------
 .hide-me {
     opacity: 0;
 }
@@ -156,6 +381,11 @@ body {
     display: none;
 }
 
+// FLEX --------------------------------------------
+.flex-me {
+    display: flex;
+    flex-direction: column;
+}
 
 @media screen and (max-width: 1345px) {
     .main-container {
@@ -174,6 +404,86 @@ body {
 
 }
 
+@media screen and (max-width: 810px) {
+    .tab-style {
+        display: flex;
+        flex-direction: column;
+        width: 310px;
+        gap: 10px;
+
+        .right-section {
+
+            width: initial;
+            flex: 1;
+
+            .details {
+                justify-content: start;
+                padding: 0px 20px;
+                margin-bottom: 50px;
+
+                h6 {
+                    font-weight: 400;
+                    font-size: 26px;
+                }
+
+                .music-title {
+                    font-size: 40px;
+                    margin-bottom: -20px;
+                }
+
+                .extra {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    gap: 5px;
+
+                    .album-name {
+                        font-size: 26px;
+                        font-weight: 400;
+                    }
+
+                    .artist-name::before {
+                        content: '♫ ';
+                    }
+
+                    .artist-name {
+                        font-size: 26px;
+                        font-weight: 500;
+                        margin-bottom: -8px;
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    .tab-style-hd {
+
+        .right-section {
+            width: 100%;
+
+            .details {
+                .extra {
+                    .artist-name::before {
+                        content: "";
+                    }
+                }
+            }
+
+            .stats {
+                position: relative;
+                bottom: 15px;
+                justify-content: center;
+                padding: 0px 0px;
+            }
+        }
+
+    }
+
+}
+
 @media screen and (max-width: 455px) {
 
     html {
@@ -188,4 +498,81 @@ body {
     .link-style:active {
         transform: translateY(-10px);
     }
+
+    .tab-style {
+
+        width: 245px;
+        gap: 10px;
+
+        img {
+            width: 245px;
+            height: 245px;
+        }
+
+        .right-section {
+
+            .details {
+
+                padding: 0px 20px;
+                margin-bottom: 50px;
+
+                h6 {
+                    font-size: 20px;
+                }
+
+                .music-title {
+                    font-size: 30px;
+                }
+
+                .extra {
+                    .album-name {
+                        font-size: 22px;
+                    }
+
+                    .artist-name {
+                        font-size: 22px;
+                    }
+                }
+
+            }
+
+            a {
+                font-size: 25px;
+            }
+
+        }
+    }
+
+    .tab-style-hd {
+
+        box-shadow: 0px 0px;
+
+        .right-section {
+            .stats {
+
+                gap: 5px;
+
+                .stat-container {
+                    display: inherit;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .total-votes,
+                    .avg-rating {
+                        width: 95px;
+                        font-weight: 500;
+                        font-size: 40px;
+                    }
+
+                    h3 {
+                        margin-top: -2px;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+
+            }
+        }
+    }
+
 }

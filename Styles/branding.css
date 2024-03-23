@@ -56,6 +56,10 @@
   content: "by ";
 }
 
+.branding:hover {
+  cursor: pointer;
+}
+
 .bd-mobile {
   display: none;
   margin-top: -15px;

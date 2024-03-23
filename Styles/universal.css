@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap");
 :root {
   --text-color: #11002F;
@@ -61,6 +62,164 @@ body {
   border: 6px solid var(--text-color);
   border-radius: 60px;
   overflow: scroll;
+}
+
+.table-style {
+  border-spacing: 10px;
+}
+.table-style caption {
+  font-size: 50px;
+  text-align: start;
+  border-radius: 15px;
+  padding-left: 25px;
+  margin: 10px;
+  margin-bottom: 0px;
+}
+.table-style tr th,
+.table-style tr td {
+  padding: 10px;
+  border: 5px solid var(--text-color);
+  border-radius: 15px;
+  background-color: var(--highlight-color);
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+}
+.table-style tr td {
+  border: 0px;
+  font-weight: 400;
+  background-color: var(--container-bg-color);
+}
+.table-style tr:nth-child(even) td {
+  background-color: #f3f3f3;
+}
+.table-style tr:hover td,
+.table-style tr:hover:nth-child(even) td {
+  cursor: pointer;
+  background-color: var(--highlight-color-op50);
+}
+
+.table-sortable th {
+  cursor: pointer;
+}
+.table-sortable .th-sort-asc,
+.table-sortable .th-sort-desc {
+  background: var(--shadow-color-op10);
+}
+.table-sortable .th-sort-asc::after {
+  content: "▴";
+  margin-left: 5px;
+}
+.table-sortable .th-sort-desc::after {
+  content: "▾";
+  margin-left: 5px;
+}
+
+.box-it {
+  border: 5px solid var(--text-color);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.box-it-fill {
+  background-color: var(--highlight-color);
+  border: 5px solid var(--text-color);
+  text-align: center;
+  border-radius: 15px;
+}
+
+.tab-style {
+  display: flex;
+  border: 6px solid var(--text-color);
+  border-radius: 25px;
+  overflow: hidden;
+  gap: 30px;
+  box-shadow: 8px 8px 0px var(--highlight-color);
+}
+.tab-style img {
+  width: 300px;
+  height: 300px;
+}
+.tab-style .right-section {
+  width: 600px;
+  align-items: end;
+  display: inherit;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.tab-style .right-section .details {
+  margin-left: 200px;
+  flex-grow: 1;
+  justify-content: center;
+  display: inherit;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+.tab-style .right-section .details h6 {
+  font-weight: 300;
+  font-size: 34px;
+}
+.tab-style .right-section .details .music-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 52px;
+  margin-bottom: -24px;
+}
+.tab-style .right-section .details .extra {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.tab-style .right-section .details .extra .album-name {
+  font-size: 40px;
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-style .right-section .details .extra .artist-name::before {
+  content: "• ";
+}
+.tab-style .right-section .details .extra .artist-name {
+  font-size: 40px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.tab-style .right-section .stats {
+  position: relative;
+  bottom: 25px;
+  display: inherit;
+  gap: 10px;
+  width: 100%;
+  justify-content: end;
+  padding: 0px 50px;
+}
+.tab-style .right-section .stats .stat-container {
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+}
+.tab-style .right-section .stats .stat-container .total-votes,
+.tab-style .right-section .stats .stat-container .avg-rating {
+  width: 130px;
+  font-weight: 500;
+  font-size: 42px;
+}
+.tab-style .right-section .stats .stat-container h3 {
+  margin-top: -4px;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.tab-style-hd .right-section {
+  width: 100%;
+}
+.tab-style-hd .right-section .details .extra .artist-name::before {
+  content: "";
 }
 
 .button-style {
@@ -136,6 +295,11 @@ body {
   display: none;
 }
 
+.flex-me {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 1345px) {
   .main-container {
     flex-direction: column;
@@ -149,6 +313,61 @@ body {
     transform: translateY(10px);
   }
 }
+@media screen and (max-width: 810px) {
+  .tab-style {
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    gap: 10px;
+  }
+  .tab-style .right-section {
+    width: initial;
+    flex: 1;
+  }
+  .tab-style .right-section .details {
+    justify-content: start;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+  .tab-style .right-section .details h6 {
+    font-weight: 400;
+    font-size: 26px;
+  }
+  .tab-style .right-section .details .music-title {
+    font-size: 40px;
+    margin-bottom: -20px;
+  }
+  .tab-style .right-section .details .extra {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+  }
+  .tab-style .right-section .details .extra .album-name {
+    font-size: 26px;
+    font-weight: 400;
+  }
+  .tab-style .right-section .details .extra .artist-name::before {
+    content: "♫ ";
+  }
+  .tab-style .right-section .details .extra .artist-name {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: -8px;
+  }
+  .tab-style-hd .right-section {
+    width: 100%;
+  }
+  .tab-style-hd .right-section .details .extra .artist-name::before {
+    content: "";
+  }
+  .tab-style-hd .right-section .stats {
+    position: relative;
+    bottom: 15px;
+    justify-content: center;
+    padding: 0px 0px;
+  }
+}
 @media screen and (max-width: 455px) {
   html {
     zoom: 85%;
@@ -159,5 +378,54 @@ body {
   }
   .link-style:active {
     transform: translateY(-10px);
+  }
+  .tab-style {
+    width: 245px;
+    gap: 10px;
+  }
+  .tab-style img {
+    width: 245px;
+    height: 245px;
+  }
+  .tab-style .right-section .details {
+    padding: 0px 20px;
+    margin-bottom: 50px;
+  }
+  .tab-style .right-section .details h6 {
+    font-size: 20px;
+  }
+  .tab-style .right-section .details .music-title {
+    font-size: 30px;
+  }
+  .tab-style .right-section .details .extra .album-name {
+    font-size: 22px;
+  }
+  .tab-style .right-section .details .extra .artist-name {
+    font-size: 22px;
+  }
+  .tab-style .right-section a {
+    font-size: 25px;
+  }
+  .tab-style-hd {
+    box-shadow: 0px 0px;
+  }
+  .tab-style-hd .right-section .stats {
+    gap: 5px;
+  }
+  .tab-style-hd .right-section .stats .stat-container {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tab-style-hd .right-section .stats .stat-container .total-votes,
+  .tab-style-hd .right-section .stats .stat-container .avg-rating {
+    width: 95px;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  .tab-style-hd .right-section .stats .stat-container h3 {
+    margin-top: -2px;
+    font-weight: 500;
+    font-size: 18px;
   }
 }/*# sourceMappingURL=universal.css.map */

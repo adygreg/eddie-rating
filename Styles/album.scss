@@ -1,0 +1,19 @@
+.album-ic {
+    gap: 25px;
+    justify-content: start;
+
+    .tab {
+        overflow: visible;
+        img {
+            border-radius: 18px 0px 0px 18px;
+        }
+    }
+
+    .album-table {
+        .song-title {
+            width: 75%;
+            text-align: start;
+            padding-left: 25px;
+        }
+    }
+}
