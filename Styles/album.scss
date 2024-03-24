@@ -5,7 +5,9 @@
     .tab {
         overflow: visible;
         img {
-            border-radius: 18px 0px 0px 18px;
+            border: 6px solid var(--text-color);
+            margin: -6px;
+            border-radius: 25px;
         }
     }
 
@@ -14,6 +16,19 @@
             width: 75%;
             text-align: start;
             padding-left: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 810px) {
+    .album-ic {
+        align-items: center;
+    }
+
+    .tab {
+        align-items: center;
+        img {
+            border-radius: 0;
         }
     }
 }
