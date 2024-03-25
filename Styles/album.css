@@ -21,7 +21,9 @@
     align-items: center;
   }
   .tab {
+    width: 100%;
     align-items: center;
+    padding-top: 18px;
   }
   .tab img {
     border-radius: 0;
