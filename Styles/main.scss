@@ -107,7 +107,7 @@
         overflow: visible;
 
         .inner-container {
-            gap: 50px;
+            gap: 20px;
         }
     }
 }
@@ -153,6 +153,10 @@
     .main-section {
 
         overflow: auto;
+
+        .inner-container {
+            gap: 20px;
+        }
 
         .category-section {
             flex: 1;

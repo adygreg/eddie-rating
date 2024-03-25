@@ -1,0 +1,22 @@
+.ex-container {
+  justify-content: start;
+  gap: 50px;
+}
+.ex-container .search-bar {
+  overflow: visible;
+}
+.ex-container .category-section {
+  width: 100%;
+  padding: 0px 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 49%);
+}
+
+@media screen and (max-width: 810px) {
+  .ex-container .category-section {
+    padding: 0%;
+    display: flex;
+    justify-content: start;
+  }
+}/*# sourceMappingURL=explore.css.map */

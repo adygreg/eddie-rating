@@ -58,35 +58,9 @@
 
     .search-bar {
 
-        width: 100%;
-        border: 6px solid var(--text-color);
         border-radius: 15px 15px 40px 40px;
-
-        padding-left: 20px;
-        overflow: hidden;
-
-        display: flex;
-
-        input {
-            flex: 1;
-            font-size: 30px;
-            font-weight: 300;
-            width: 0px; // idk it worked from search bar growing
-            border: 0px;
-        }
-
-        input:focus {
-            outline: 0cap;
-        }
-
-        input::placeholder {
-            opacity: .3;
-        }
-
         button {
-            border: 0px;
-            border-left: 6px solid var(--text-color);
-            border-radius: 16px 6px 31px 6px;
+            border-radius: 0px 6px 31px 0px;
         }
 
     }

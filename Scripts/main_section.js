@@ -1,3 +1,3 @@
 $(function () {
-    $(".main-section").load("/Pages/Primary/home.html");
+    $(".main-section").load("/Pages/Primary/explore.html");
 });

@@ -3,7 +3,7 @@ $(function () {
     var underconstructionPage = "/Pages/Primary/under_construction.html"
 
     var homePage = "/Pages/Primary/home.html";
-    var explorePage = underconstructionPage;
+    var explorePage = "/Pages/Primary/explore.html";
     var chartPage = underconstructionPage;
     var aboutPage = underconstructionPage;
     var donatePage = underconstructionPage;

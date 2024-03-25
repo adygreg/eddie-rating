@@ -84,7 +84,7 @@
     overflow: visible;
   }
   .main-section .inner-container {
-    gap: 50px;
+    gap: 20px;
   }
 }
 @media screen and (max-width: 970px) {
@@ -112,6 +112,9 @@
 @media screen and (max-width: 455px) {
   .main-section {
     overflow: auto;
+  }
+  .main-section .inner-container {
+    gap: 20px;
   }
   .main-section .category-section {
     flex: 1;
