@@ -4,6 +4,7 @@
 
     .tab {
         overflow: visible;
+
         img {
             border: 6px solid var(--text-color);
             margin: -6px;
@@ -29,8 +30,25 @@
         width: 100%;
         align-items: center;
         padding-top: 18px;
+
         img {
             border-radius: 0;
         }
+
+        .right-section {
+            .details {
+                .music-title {
+                    text-align: center;
+                }
+
+                .extra {
+                    .artist-name {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+        }
     }
+
 }

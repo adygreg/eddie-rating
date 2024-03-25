@@ -28,4 +28,11 @@
   .tab img {
     border-radius: 0;
   }
+  .tab .right-section .details .music-title {
+    text-align: center;
+  }
+  .tab .right-section .details .extra .artist-name {
+    width: 100%;
+    text-align: center;
+  }
 }/*# sourceMappingURL=album.css.map */
