@@ -388,50 +388,6 @@ body {
 
 }
 
-.tab-style-mini {
-
-    box-shadow: none;
-
-    img {
-        width: 200px;
-        height: 200px;
-        border-radius: 18px;
-        border: 6px solid var(--text-color);
-        margin: -6px;
-    }
-
-    gap: 15px;
-
-    .right-section {
-
-        .details {
-            margin: 0px;
-
-            .music-title {
-                font-size: 42px;
-            }
-
-            .extra {
-                .artist-name {
-                    font-size: 30px;
-                }
-
-                .artist-name::before {
-                    content: "";
-                }
-            }
-        }
-
-        a {
-            position: sticky;
-            bottom: 0%;
-            right: 0%;
-            font-size: 30px;
-        }
-    }
-
-}
-
 // BUTTON STYLE --------------------------------------------
 
 .button-style {
@@ -542,35 +498,6 @@ body {
 
 }
 
-
-@media screen and (max-width: 945px) {
-
-    .tab-style-mini {
-
-        img {
-            width: 130px;
-            height: 130px;
-        }
-
-        .right-section {
-            a {
-                transform: scale(12);
-                color: #00000000;
-                background-color: #00000000;
-                position:relative;
-                font-size: 26px;
-                margin-bottom: -24px;
-                transition: 0s;
-            }
-            a:active {
-                background-color: var(--highlight-color-op25);
-            }
-        }
-
-    }
-
-}
-
 @media screen and (max-width: 810px) {
 
     .mobile-hide {
@@ -652,35 +579,6 @@ body {
             }
         }
 
-    }
-
-    .tab-style-mini {
-
-        flex-direction: row;
-        width: auto;
-
-        .right-section {
-
-            .details {
-                justify-content: center;
-                margin:0px;
-                padding: 0px;
-
-                .music-title {
-                    font-size: 36px;
-                }
-
-                .extra {
-                    .artist-name {
-                        font-size: 26px;
-                    }
-
-                    .artist-name::before {
-                        content: "";
-                    }
-                }
-            }
-        }
     }
 
 }
@@ -776,43 +674,6 @@ body {
                     }
                 }
 
-            }
-        }
-    }
-
-
-    .tab-style-mini {
-
-        flex-direction: row;
-        width: auto;
-
-        img {
-            width: 100px;
-            height: 100px;
-        }
-
-        .right-section {
-
-            height: 0px;
-
-            .details {
-                justify-content: center;
-                margin:0px;
-                padding: 0px;
-
-                .music-title {
-                    font-size: 36px;
-                }
-
-                .extra {
-                    .artist-name {
-                        font-size: 26px;
-                    }
-
-                    .artist-name::before {
-                        content: "";
-                    }
-                }
             }
         }
     }

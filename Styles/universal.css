@@ -294,36 +294,6 @@ body {
   content: "";
 }
 
-.tab-style-mini {
-  box-shadow: none;
-  gap: 15px;
-}
-.tab-style-mini img {
-  width: 200px;
-  height: 200px;
-  border-radius: 18px;
-  border: 6px solid var(--text-color);
-  margin: -6px;
-}
-.tab-style-mini .right-section .details {
-  margin: 0px;
-}
-.tab-style-mini .right-section .details .music-title {
-  font-size: 42px;
-}
-.tab-style-mini .right-section .details .extra .artist-name {
-  font-size: 30px;
-}
-.tab-style-mini .right-section .details .extra .artist-name::before {
-  content: "";
-}
-.tab-style-mini .right-section a {
-  position: sticky;
-  bottom: 0%;
-  right: 0%;
-  font-size: 30px;
-}
-
 .button-style {
   font-size: 32px;
   text-align: center;
@@ -424,24 +394,6 @@ body {
     transform: translateY(10px);
   }
 }
-@media screen and (max-width: 945px) {
-  .tab-style-mini img {
-    width: 130px;
-    height: 130px;
-  }
-  .tab-style-mini .right-section a {
-    transform: scale(12);
-    color: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
-    position: relative;
-    font-size: 26px;
-    margin-bottom: -24px;
-    transition: 0s;
-  }
-  .tab-style-mini .right-section a:active {
-    background-color: var(--highlight-color-op25);
-  }
-}
 @media screen and (max-width: 810px) {
   .mobile-hide {
     display: none;
@@ -498,24 +450,6 @@ body {
     bottom: 15px;
     justify-content: center;
     padding: 0px 0px;
-  }
-  .tab-style-mini {
-    flex-direction: row;
-    width: auto;
-  }
-  .tab-style-mini .right-section .details {
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-  }
-  .tab-style-mini .right-section .details .music-title {
-    font-size: 36px;
-  }
-  .tab-style-mini .right-section .details .extra .artist-name {
-    font-size: 26px;
-  }
-  .tab-style-mini .right-section .details .extra .artist-name::before {
-    content: "";
   }
 }
 @media screen and (max-width: 455px) {
@@ -580,31 +514,6 @@ body {
     margin-top: -2px;
     font-weight: 500;
     font-size: 18px;
-  }
-  .tab-style-mini {
-    flex-direction: row;
-    width: auto;
-  }
-  .tab-style-mini img {
-    width: 100px;
-    height: 100px;
-  }
-  .tab-style-mini .right-section {
-    height: 0px;
-  }
-  .tab-style-mini .right-section .details {
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-  }
-  .tab-style-mini .right-section .details .music-title {
-    font-size: 36px;
-  }
-  .tab-style-mini .right-section .details .extra .artist-name {
-    font-size: 26px;
-  }
-  .tab-style-mini .right-section .details .extra .artist-name::before {
-    content: "";
   }
   .table-style caption {
     font-size: 32px;
