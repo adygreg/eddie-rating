@@ -1,5 +1,5 @@
 .album-ic {
-  gap: 25px;
+  gap: 40px;
   justify-content: start;
 }
 .album-ic .tab {
@@ -9,6 +9,22 @@
   border: 6px solid var(--text-color);
   margin: -6px;
   border-radius: 25px;
+}
+.album-ic .submit-section {
+  display: flex;
+  gap: 25px;
+}
+.album-ic .submit-section .button-style {
+  font-family: "Fredoka";
+  font-weight: 500;
+}
+.album-ic .submit-section textarea {
+  width: 100%;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 6px solid var(--text-color);
+  border-radius: 16px;
+  box-shadow: 8px 8px 0px var(--shadow-color);
 }
 .album-ic .album-table .song-title {
   width: 75%;

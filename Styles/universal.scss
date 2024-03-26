@@ -1,4 +1,5 @@
 :root {
+
     --text-color-op20: #11002F20;
     --text-color: #11002F;
     --background-color-op10: #9747ff10;
@@ -559,6 +560,7 @@ body {
                 position:relative;
                 font-size: 26px;
                 margin-bottom: -24px;
+                transition: 0s;
             }
             a:active {
                 background-color: var(--highlight-color-op25);
@@ -786,10 +788,12 @@ body {
 
         img {
             width: 100px;
-            height: inherit;
+            height: 100px;
         }
 
         .right-section {
+
+            height: 0px;
 
             .details {
                 justify-content: center;

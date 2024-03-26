@@ -1,0 +1,16 @@
+:root {
+  --text-color-op20: #11002F20;
+  --text-color: #11002F;
+  --background-color-op10: #37364A10;
+  --background-color-op25: #37364A25;
+  --background-color-op50: #37364A50;
+  --background-color: #37364A;
+  --container-bg-color: #ffffff;
+  --shadow-color-op10: #2c307610;
+  --shadow-color: #2c3076;
+  --highlight-color-op25: #e00b0025;
+  --highlight-color-op50: #e00b0050;
+  --highlight-color-op75: #e00b0075;
+  --highlight-color-op90: #e00b0090;
+  --highlight-color: #e00b00;
+}

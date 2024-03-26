@@ -436,6 +436,7 @@ body {
     position: relative;
     font-size: 26px;
     margin-bottom: -24px;
+    transition: 0s;
   }
   .tab-style-mini .right-section a:active {
     background-color: var(--highlight-color-op25);
@@ -586,7 +587,10 @@ body {
   }
   .tab-style-mini img {
     width: 100px;
-    height: inherit;
+    height: 100px;
+  }
+  .tab-style-mini .right-section {
+    height: 0px;
   }
   .tab-style-mini .right-section .details {
     justify-content: center;
