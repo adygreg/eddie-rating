@@ -51,4 +51,9 @@
     width: 100%;
     text-align: center;
   }
+}
+@media screen and (max-width: 455px) {
+  .album-ic .mobile-hide {
+    display: none;
+  }
 }/*# sourceMappingURL=album.css.map */

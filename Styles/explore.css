@@ -54,6 +54,7 @@
   width: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 14px 0px 0px 14px;
 }
 .ex-container .et-vertical .right-section .details {
   flex: 1;

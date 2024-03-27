@@ -339,13 +339,12 @@ body {
         }
 
         .stats {
-            position: relative;
-            bottom: 25px;
+            position: sticky;
+            right: 30px;
+            padding-bottom: 10px;
             display: inherit;
             gap: 10px;
-            width: 100%;
             justify-content: end;
-            padding: 0px 50px;
 
             .stat-container {
                 display: inherit;

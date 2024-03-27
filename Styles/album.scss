@@ -73,5 +73,12 @@
             }
         }
     }
+}
 
+@media screen and (max-width: 455px) {
+    .album-ic {
+        .mobile-hide {
+            display: none;
+        }
+    }
 }

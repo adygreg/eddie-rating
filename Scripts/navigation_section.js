@@ -5,7 +5,7 @@ $(function () {
     var homePage = "/Pages/Primary/home.html";
     var explorePage = "/Pages/Primary/explore.html";
     var chartPage = underconstructionPage;
-    var aboutPage = underconstructionPage;
+    var aboutPage = "/Pages/Primary/about.html";
     var donatePage = underconstructionPage;
 
     $(".branding").click(function() {
