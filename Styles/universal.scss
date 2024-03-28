@@ -571,10 +571,9 @@ body {
             }
 
             .stats {
-                position: relative;
-                bottom: 15px;
+                width: 100%;
+                position: static;
                 justify-content: center;
-                padding: 0px 0px;
             }
         }
 
