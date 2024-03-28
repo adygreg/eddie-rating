@@ -1,5 +1,5 @@
 .navigation-bar {
-    .nav-ctas {
+    .nav-ctas, .nc-mobile-menu {
         .link-list {
 
             display: flex;
@@ -63,6 +63,19 @@
             border-radius: 0px 6px 31px 0px;
         }
 
+    }
+
+    .nc-mobile-menu {
+        z-index: 10;
+        display: none;
+        position: absolute;
+        background-color: var(--container-bg-color);
+        top: 110px;
+        right: 55px;
+        width: 320px;
+        padding: 10px 15px;
+        border: 6px solid var(--text-color);
+        border-radius: 16px;
     }
 }
 
@@ -154,6 +167,13 @@
 
             }
         }
+        .nc-mobile-menu {
+            .link-list {
+                .not-menu-item {
+                    display: none;
+                }
+            }
+        }
     }
 }
 
@@ -167,6 +187,13 @@
 
             }
         }
+        .nc-mobile-menu {
+            .link-list {
+                .menu-item {
+                    display: flex;
+                }
+            }
+        }
     }
 }
 
@@ -178,6 +205,13 @@
                     display: none;
                 }
 
+            }
+        }
+        .nc-mobile-menu {
+            .link-list {
+                .menu-item-2 {
+                    display: flex;
+                }
             }
         }
     }
@@ -194,7 +228,7 @@
             display: none;
         }
         .nav-ctas {
-
+            
             width: 100%;
 
             .link-list {
@@ -220,6 +254,24 @@
                     margin-bottom: 5px;
                 }
 
+            }
+        }
+
+        .nc-mobile-menu {
+
+            right: 35px;
+            top: auto;
+            bottom: 115px;
+            width: 320px;
+
+            .link-list {
+                flex-direction: column-reverse;
+                .menu-item, .menu-item-2 {
+                    display: none;
+                }
+                .menu-item-3 {
+                    display: flex;
+                }
             }
         }
     }

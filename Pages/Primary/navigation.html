@@ -48,8 +48,8 @@
                     <i class="fa-solid fa-mug-saucer"></i>
                     <h3>Coffee</h3>
                 </a> </li>
-            <li class="menu">
-                <button type="button" class="link-style">
+            <li class="menu" id="menu-caret">
+                <button type="button" class="link-style" onclick="menu_action()">
                     <i class="fa-solid fa-square-caret-down"></i>
                 </button>
             </li>
@@ -57,6 +57,35 @@
     </div>
 
     <!-- -------------------- Navigation CTAs End -------------------- -->
+
+    <div class="nc-mobile-menu" id="nc-mobile">
+
+        <ul class="link-list">
+
+            <li> <a class="link-style home-button not-menu-item menu-item-3">
+                <i class="fa-solid fa-house"></i>
+                    <h3>Home</h3>
+                </a> </li>
+            <li> <a class="link-style explore-button not-menu-item menu-item-2">
+                    <i class="fa-solid fa-book-open-reader"></i>
+                    <h3>Explore</h3>
+                </a> </li>
+            <li> <a class="link-style chart-button not-menu-item menu-item">
+                    <i class="fa-solid fa-ranking-star"></i>
+                    <h3>Chart</h3>
+                </a> </li>
+            <li> <a class="link-style about-button">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <h3>About</h3>
+                </a> </li>
+            <li> <a class="link-style donate-button">
+                    <i class="fa-solid fa-mug-saucer"></i>
+                    <h3>Coffee</h3>
+                </a> </li>
+
+        </ul>
+        
+    </div>
 
     <!-- -------------------- Search Bar -------------------- -->
 
@@ -69,6 +98,21 @@
     <!-- -------------------- Search Bar End -------------------- -->
 
 </div>
+
+<script>
+    var menu_open = false;
+    var menu_id = document.getElementById("nc-mobile");
+    function menu_action() {
+        if (!menu_open) {
+            menu_id.style.display = "block";
+        }
+        else {
+            menu_id.style.display = "none"
+        }
+
+        menu_open = !menu_open;
+    }
+</script>
 
 <!-- Loads Pages -->
 <script src="/Scripts/navigation_section.js"></script>

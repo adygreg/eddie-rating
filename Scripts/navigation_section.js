@@ -12,6 +12,10 @@ $(function () {
         $(".main-section").load(homePage);
     });
 
+    $(".home-button").click(function() {
+        $(".main-section").load(homePage);
+    });
+
     $(".explore-button").click(function() {
         $(".main-section").load(explorePage);
     });
